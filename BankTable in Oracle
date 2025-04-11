@@ -1,0 +1,13 @@
+CREATE TABLE Bank (
+    Bank_ID        NUMBER(5),
+    Opened_Timestamp TIMESTAMP,            -- Stores both date and time
+    Bank_Name      VARCHAR2(50),
+    Branch_Code    CHAR(5)
+);
+
+
+INSERT INTO Bank (Bank_ID, Opened_Timestamp, Bank_Name, Branch_Code)
+VALUES (201, TO_TIMESTAMP('2024-04-10 09:30:00', 'YYYY-MM-DD HH24:MI:SS'), 'HDFC Bank', 'H1001');
+
+
+Select * from Bank;
