@@ -1,13 +1,14 @@
-CREATE TABLE Bank (
-    Bank_ID        NUMBER(5),
-    Opened_Timestamp TIMESTAMP,            -- Stores both date and time
-    Bank_Name      VARCHAR2(50),
-    Branch_Code    CHAR(5)
+create table Bank(
+bank_id number,
+bank_name varchar2(20),
+opned_date Date,
+branch_code char(5)
 );
 
+insert into Bank values
+(101,'SBI',To_date('2025-02-25','YYYY-MM-DD'),'SB001');
 
-INSERT INTO Bank (Bank_ID, Opened_Timestamp, Bank_Name, Branch_Code)
-VALUES (201, TO_TIMESTAMP('2024-04-10 09:30:00', 'YYYY-MM-DD HH24:MI:SS'), 'HDFC Bank', 'H1001');
+insert into Bank values
+(102,'HDFC',To_date('2025-02-25','YYYY-MM-DD'),'HD002');
 
-
-Select * from Bank;
+select * from Bank;
