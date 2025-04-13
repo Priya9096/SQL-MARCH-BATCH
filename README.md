@@ -1,4 +1,4 @@
-# SQL LeetCode Playlist 🎯
+## SQL LeetCode Playlist 🎯
 
 This playlist covers SQL solutions for popular LeetCode problems. Each video walks through the logic, query, and explanation step-by-step.
 
