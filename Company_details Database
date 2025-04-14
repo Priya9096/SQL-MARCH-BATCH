@@ -22,3 +22,17 @@ select * from emp;
 
 
 
+1. What are constraints in SQL?
+2. What are the Types of Constraints?
+3. Can we insert null values into Unique Column?
+4. What is Primary Key constraint?
+5. What is not null Constraint?
+6. Are constraints case sessitive?
+7. Create one table using Not null, unique, default and primary key constraint.
+Emp:
+emp_id - Primary Key,
+emp_name - Not null,
+emp_email - default 'user@gmail.com'
+
+
+
