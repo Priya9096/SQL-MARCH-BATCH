@@ -1,0 +1,57 @@
+create database coderz;
+use coderz;
+create table emp(
+emp_id int unique,
+emp_name varchar(20) not null,
+emp_salary decimal,
+emp_dob date);
+
+show tables;
+
+select * from emp;
+insert into emp values(101,'Akash',25000,'1998-02-02'),
+(102,'Neha',35000,'2002-12-12');
+
+create table Emp_Designation(
+emp_id int unique,
+emp_role varchar(20) default 'Worker');
+
+insert into emp_designation values(101,'SDE1'),(102,'SDE2');
+insert into emp_designation(emp_id) values (103),(104);
+insert into emp_designation values(null,'Tester');
+
+select * from emp_designation;
+
+-- Unique, Not null , default
+
+
+create table emp_performance (
+emp_id int primary key,
+emp_rating char(1) not null);
+
+insert into emp_performance values(101,'A'),(102,'B');
+
+select * from emp_performance;
+
+1. What are constraints in SQL?
+2. What are the Types of Constraints?
+3. Can we insert null values into Unique Column?
+4. What is Primary Key constraint?
+5. What is not null Constraint?
+6. Are constraints case sessitive?
+7. Create one table using Not null, unique, default and primary key constraint.
+Emp:
+emp_id - Primary Key,
+emp_name - Not null,
+emp_email - unique default 'user@gmail.com'
+
+
+
+
+
+
+
+
+
+
+
